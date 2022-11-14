@@ -1,7 +1,7 @@
 FROM node:14
 EXPOSE 3001
+WORKDIR /docker/todo-app/back-end/src
 ADD ./node_modules.tar.gz .
 COPY ./ .
-WORKDIR /docker/todo-app/back-end/src
 RUN npm install
-RUN npm start
+CMD ["npm", "start"]
