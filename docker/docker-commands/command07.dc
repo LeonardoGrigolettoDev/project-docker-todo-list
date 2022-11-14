@@ -1,2 +1,1 @@
-docker container create -p 3000:8080 --name 02images nginx:1.21.3-alpine
-docker container start 02images
+docker container run -p 3000:8080 -d --name 02images nginx:1.21.3-alpine
