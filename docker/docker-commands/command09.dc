@@ -1,1 +1,2 @@
-docker build ./docker/todo-app/back-end/Dockerfile todobackend
+cd sd-024-b-project-docker-todo-list/docker/todo-app/back-end
+docker build ./ -t todobackend
